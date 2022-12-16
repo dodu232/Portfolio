@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.table-container {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin: 10% auto auto auto;
+}
+
+table {
+	border-collapse: collapse;
+	border: solid 1px lightblue;
+}
+
+button, th, td {
+	padding: 5px;
+}
+
+button {
+	border: solid 1px lightblue;
+	cursor: pointer;
+	margin-top: 10px;
+}
