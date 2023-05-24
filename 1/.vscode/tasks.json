@@ -37,7 +37,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "label": "C/C++: g++.exe �솢�꽦 �뙆�씪 鍮뚮뱶",
             "command": "C:/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
@@ -53,11 +53,11 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "디버거에서 생성된 작업입니다."
+            "detail": "�뵒踰꾧굅�뿉�꽌 �깮�꽦�맂 �옉�뾽�엯�땲�떎."
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "label": "C/C++: g++.exe �솢�꽦 �뙆�씪 鍮뚮뱶",
             "command": "C:/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
@@ -73,11 +73,11 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "컴파일러: C:/mingw64/bin/g++.exe"
+            "detail": "而댄뙆�씪�윭: C:/mingw64/bin/g++.exe"
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "label": "C/C++: g++.exe �솢�꽦 �뙆�씪 鍮뚮뱶",
             "command": "C:/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
@@ -93,11 +93,11 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "컴파일러: C:/mingw64/bin/g++.exe"
+            "detail": "而댄뙆�씪�윭: C:/mingw64/bin/g++.exe"
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "label": "C/C++: g++.exe �솢�꽦 �뙆�씪 鍮뚮뱶",
             "command": "C:/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
@@ -116,7 +116,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "컴파일러: C:/mingw64/bin/g++.exe"
+            "detail": "而댄뙆�씪�윭: C:/mingw64/bin/g++.exe"
         }
     ]
 }
