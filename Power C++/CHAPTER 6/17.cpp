@@ -12,33 +12,32 @@ int main(){
 
     int chEnd;
 
+    // 이름의 글자수 확인 및 대문자로 변경
     for(int i=0; i<50; i++){
-        if(isalpha(ch[i]) == 0 && isalpha(ch[i+1]) == 0){
+        if(isalpha(ch[i]) == 2){
+            ch[i] -= 32;
+        } else if(isalpha(ch[i]) == 0 && isalpha(ch[i+1]) == 0){
             chEnd = i-1;
             break;
         }
     }
 
-    for(int i=chEnd; i>=0; i--){
-        if(isalpha(ch[i]) != 0 && isalpha(ch[i-1]) == 0){
-            int temp;
-            for(int j=i; j<50; j++){
-                if(isalpha(ch[j]) == 0){
-                    temp = j;
-                    break;
-                }
-            }
+    // 이름의 초성 출력
+    for(int i=0; i<chEnd; i++){
+        if(i == 0){
 
-            for(int j=i; j<temp; j++){
-                cout << ch[j];
-            }
-        } else if((int)ch[i] == 32){
-            cout << " ";
+        } else if(isalpha(ch[i]) != 0 && isalpha(ch[i-1]) == 0){
+            cout << ch[i] << ". ";
         }
     }
 
-    for(int i=0; i<50; i++ ){
-        
+    // 맨 첫번째 쓴 글자를 제일 마지막에 출력
+    for(int i=0; i<chEnd; i++){
+        if(isalpha(ch[i]) != 0){
+            cout << ch[i];
+        } else {
+            break;
+        }
     }
 
     return 0;
