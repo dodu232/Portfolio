@@ -9,15 +9,49 @@ int main(){
     cout << "문자열을 입력하시오: ";
     cin.getline(ch, 80);
 
-    int cnt = 0;
-    while(true){
-        char temp[20];
+    // 소문자로 통일
+    for(int i=0; i<strlen(ch); i++){
+        if(isalpha(ch[i]) == 1){
+             ch[i] += 32;
+        }
+    }
+
+    int start = 0;
+    int end = 0;
+    while(end < strlen(ch)){
+        char temp[20] = {0,};
+        int cnt = 0;
 
         // 문장 단어 별로 쪼개기
-        for(int i=0; i<strlen(ch); i++){
-            
+        for(int i=end; i<=strlen(ch); i++){
+            if(isalpha(ch[i]) == 0 && i != end){
+                start = end;
+                if(end != 0){
+                    start++;
+                }
+                end = i;
+                break;
+            }
         }
 
+        for(int i=0; i<end-start; i++){
+            temp[i] = ch[i + start];
+        }
+
+        // 몇 번 들어갔는지
+        for(int i=0; i<strlen(ch); i++){
+            bool check = true;
+            for(int j=0; j<strlen(temp); j++){
+                if(ch[i+j] != temp[j]){
+                    check = false;
+                }
+            }
+            if(check){
+                cnt++;
+            }
+        }
+
+        cout << temp << " " << cnt << endl;
     }
 
     return 0;
