@@ -12,6 +12,8 @@
         "xutility": "cpp",
         "istream": "cpp",
         "system_error": "cpp",
-        "xlocale": "cpp"
-    }
+        "xlocale": "cpp",
+        "ios": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
