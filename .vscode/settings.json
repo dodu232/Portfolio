@@ -1,0 +1,12 @@
+{
+    "cmake.sourceDirectory": "C:/bo/Portfolio/1/study/4",
+    "files.associations": {
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp",
+        "ostream": "cpp",
+        "utility": "cpp",
+        "string": "cpp"
+    }
+}
