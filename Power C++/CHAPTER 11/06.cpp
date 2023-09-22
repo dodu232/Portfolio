@@ -1,7 +1,7 @@
-// ³¯Â¥¸¦ ³ªÅ¸³»´Â Date Å¬·¡½º¸¦ Á¤ÀÇÇÏ¶ó. Date Å¬·¡½º´Â year, month, day¸¦ ¸â¹ö º¯¼ö·Î °¡Áö¸ç »ı¼ºÀÚ¿Í ¼Ò¸êÀÚµµ °¡Áø´Ù. ÀÌ¾î¼­ Á÷¿øÀ» ³ªÅ¸³»´Â Employee Å¬·¡½º¸¦ Á¤ÀÇÇÑ´Ù. 
-// Employee Å¬·¡½º´Â Á÷¿øÀÇ ÀÌ¸§°ú Á÷¿øÀÇ »ıÀÏ, Á÷¿øÀÇ ÀÔ»çÀÏ¸¦ °¡Áö°í ÀÖ´Ù. »ıÀÏ°ú ÀÔ»çÀÏÀº Date °´Ã¼·Î Ç¥ÇöµÈ´Ù. Employee Å¬·¡½ºÀÇ »ı¼ºÀÚ´Â ÀÌ¸§, »ıÀÏ, ÀÔ»çÀÏÀ» ¸Å°³ º¯¼ö·Î ¹Ş´Â´Ù.
+// ë‚ ì§œë¥¼ ë‚˜íƒ€ë‚´ëŠ” Date í´ë˜ìŠ¤ë¥¼ ì •ì˜í•˜ë¼. Date í´ë˜ìŠ¤ëŠ” year, month, dayë¥¼ ë©¤ë²„ ë³€ìˆ˜ë¡œ ê°€ì§€ë©° ìƒì„±ìì™€ ì†Œë©¸ìë„ ê°€ì§„ë‹¤. ì´ì–´ì„œ ì§ì›ì„ ë‚˜íƒ€ë‚´ëŠ” Employee í´ë˜ìŠ¤ë¥¼ ì •ì˜í•œë‹¤. 
+// Employee í´ë˜ìŠ¤ëŠ” ì§ì›ì˜ ì´ë¦„ê³¼ ì§ì›ì˜ ìƒì¼, ì§ì›ì˜ ì…ì‚¬ì¼ë¥¼ ê°€ì§€ê³  ìˆë‹¤. ìƒì¼ê³¼ ì…ì‚¬ì¼ì€ Date ê°ì²´ë¡œ í‘œí˜„ëœë‹¤. Employee í´ë˜ìŠ¤ì˜ ìƒì„±ìëŠ” ì´ë¦„, ìƒì¼, ì…ì‚¬ì¼ì„ ë§¤ê°œ ë³€ìˆ˜ë¡œ ë°›ëŠ”ë‹¤.
 // Employee(string name, Date& birthDate, Date& hireDate);
-// Employee Å¬·¡½º¸¦ ±¸ÇöÇÏ°í °´Ã¼¸¦ »ı¼ºÇÏ¿©¼­ Å×½ºÆ®ÇÏ¶ó.
+// Employee í´ë˜ìŠ¤ë¥¼ êµ¬í˜„í•˜ê³  ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ì„œ í…ŒìŠ¤íŠ¸í•˜ë¼.
 #include <iostream>
 #include <string>
 using namespace std;
@@ -20,7 +20,7 @@ public:
 };
 
 string Date::getDate(){
-    return to_string(year) + "³â" + to_string(month) + "¿ù" + to_string(day) + "ÀÏ";
+    return to_string(year) + "ë…„" + to_string(month) + "ì›”" + to_string(day) + "ì¼";
 }
 
 class Employee{
@@ -36,9 +36,9 @@ public:
 };
 
 void Employee::print(){
-    cout << "ÀÌ¸§: " << name ;
-    cout << ", »ıÀÏ: " << birthDate.getDate();
-    cout << ", ÀÔ»çÀÏ: " << hireDate.getDate() << endl;
+    cout << "ì´ë¦„: " << name ;
+    cout << ", ìƒì¼: " << birthDate.getDate();
+    cout << ", ì…ì‚¬ì¼: " << hireDate.getDate() << endl;
 }
 
 int main(){
@@ -50,8 +50,8 @@ int main(){
     cout << d2.getDate() << endl;
     cout << d3.getDate() << endl;
     
-    Employee e1("º¸°æ", d2, d3);
-    Employee e2("Â¯±¸", d2, d1);
+    Employee e1("ë³´ê²½", d2, d3);
+    Employee e2("ì§±êµ¬", d2, d1);
 
     e1.print();
     e2.print();
